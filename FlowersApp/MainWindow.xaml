@@ -1,0 +1,21 @@
+﻿<Window x:Class="FlowersApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowersApp"
+        mc:Ignorable="d"
+        MinHeight="450" MinWidth="800"
+        Title="ООО Цветы" Height="800" Width="1400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+            <Image Source="/Resources/EasyChair.png" Margin="10"/>
+            <TextBlock Text="OOO Flowers" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Frame Grid.Row="1" Name="FrNav"/>
+    </Grid>
+</Window>
